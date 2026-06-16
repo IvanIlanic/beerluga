@@ -1,0 +1,256 @@
+* { box-sizing: border-box; }
+
+:root {
+  --beer-orange: #F7931E;
+  --beer-orange-dark: #D97706;
+  --beer-blue: #59C3E6;
+  --beer-blue-dark: #2A9BC5;
+  --beer-teal: #0F8A7B;
+  --beer-bg: #FFF8EE;
+  --beer-text: #1F2937;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+main {
+  height: 100%;
+  position: relative;
+  background: var(--beer-bg);
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.top-panel {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  z-index: 1000;
+  color: white;
+  padding: 14px 16px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, var(--beer-orange) 0%, var(--beer-blue) 52%, var(--beer-teal) 100%);
+  box-shadow: 0 12px 30px rgba(0,0,0,.25);
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+p {
+  line-height: 1.4;
+}
+
+.top-panel p {
+  margin: 2px 0 0;
+  opacity: .9;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.legend {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+button, .directions {
+  border: 0;
+  border-radius: 999px;
+  background: var(--beer-orange);
+  color: white;
+  font-weight: 900;
+  padding: 11px 15px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(247,147,30,.32);
+}
+
+.beer-marker {
+  background: transparent;
+  border: 0;
+}
+
+.marker {
+  width: 38px;
+  height: 38px;
+  border-radius: 50% 50% 50% 8px;
+  display: grid;
+  place-items: center;
+  background: white;
+  opacity: .78;
+  transform: rotate(-45deg);
+  border: 3px solid white;
+  box-shadow: 0 8px 18px rgba(0,0,0,.26);
+  font-size: 19px;
+}
+
+.marker--active {
+  background: var(--beer-orange);
+  opacity: 1;
+  transform: rotate(-45deg) scale(1.15);
+  box-shadow:
+    0 0 0 6px rgba(247,147,30,.25),
+    0 8px 20px rgba(247,147,30,.5);
+}
+
+.marker--soon {
+  background: var(--beer-blue);
+  opacity: 1;
+}
+
+.bar-card {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  z-index: 1001;
+  background: white;
+  border-radius: 26px;
+  padding: 14px;
+  border-top: 6px solid var(--beer-orange);
+  box-shadow: 0 18px 45px rgba(0,0,0,.32);
+  max-height: 65vh;
+  overflow: auto;
+}
+
+.bar-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 18px;
+  background: #eee;
+}
+
+.bar-card h2 {
+  margin: 12px 42px 6px 0;
+  color: var(--beer-teal);
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  font-size: 24px;
+  background: rgba(255,255,255,.95);
+  color: var(--beer-orange);
+}
+
+.hours {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.perks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 12px 0 16px;
+}
+
+.perks span {
+  background: var(--beer-bg);
+  color: var(--beer-text);
+  border-radius: 999px;
+  padding: 7px 10px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.directions {
+  display: block;
+  text-align: center;
+}
+
+.happy-hours-box {
+  background: #FFF3E0;
+  border-radius: 16px;
+  padding: 12px;
+  margin: 12px 0;
+}
+
+.happy-hours-box h3 {
+  margin: 0 0 10px;
+  color: #D97706;
+  font-size: 15px;
+}
+
+.happy-period + .happy-period {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(0,0,0,.08);
+}
+
+.happy-time-row {
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.happy-prices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.happy-prices span {
+  background: white;
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.user-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #4285F4;
+  border: 3px solid white;
+  box-shadow: 0 0 0 12px rgba(66,133,244,.18);
+}
+
+.maplibregl-popup-content {
+  border-radius: 14px;
+  padding: 8px 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.15);
+}
+
+.maplibregl-popup-tip {
+  border-top-color: white !important;
+}
+
+@media (min-width: 720px) {
+  .top-panel {
+    left: 24px;
+    right: auto;
+    width: 430px;
+  }
+
+  .bar-card {
+    left: 24px;
+    right: auto;
+    bottom: 24px;
+    width: 430px;
+  }
+}

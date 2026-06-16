@@ -1,0 +1,9 @@
+{
+  "name": "Beer Luga",
+  "short_name": "Beer Luga",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#f4b942",
+  "icons": []
+}
