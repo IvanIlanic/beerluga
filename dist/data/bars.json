@@ -1,0 +1,1149 @@
+[
+  {
+    "name": "Microbar Reykjavík",
+    "introduction": "Micro Bar in Reykjavík offers a unique craft beer experience with 10 rotating taps and a range of bottled brews from around the world. Owned by Gæðingur Brewery, this minimalist taproom invites you to sample local and international craft beers and flights in a relaxed, welcoming setting.",
+    "imageURL": "https://imgur.com/RREmW3O.jpg",
+    "openTime": "15:00",
+    "closeTime": "01:00",
+    "happyPeriods": [
+      {
+        "start": "15:00",
+        "end": "18:00",
+        "beerPrice": null,
+        "winePrice": null,
+        "cocktailPrice": null
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "beer.mug.fill",
+        "title": "Craft Beer Selection"
+      },
+      {
+        "iconName": "chart.bar.fill",
+        "title": "Tasting Flights"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.143472,
+      "longitude": -21.917945
+    },
+    "id": "microbar-reykjavik",
+    "slug": "microbar-reykjavik",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "Den Danske Kro",
+    "introduction": "Den Danske Kro is a must-visit bar in Reykjavík, offering an inviting Danish pub atmosphere with live music and great beer. Ton of games to play!!",
+    "imageURL": "https://imgur.com/EcH0FbN.jpg",
+    "openTime": "12:00",
+    "closeTime": "04:30",
+    "happyPeriods": [
+      {
+        "start": "16:00",
+        "end": "19:00",
+        "beerPrice": null,
+        "winePrice": null,
+        "cocktailPrice": null
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "music.note",
+        "title": "Live Music"
+      },
+      {
+        "iconName": "dart",
+        "title": "Tons of games"
+      },
+      {
+        "iconName": "2.circle",
+        "title": "2-for-1 Drinks"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.146344,
+      "longitude": -21.933838
+    },
+    "id": "den-danske-kro",
+    "slug": "den-danske-kro",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "Pósthús Mathöll",
+    "introduction": "Craving delicious food and drinks in a vibrant setting? Pósthús Mathöll hosts nine eateries under one roof, offering everything from classic to innovative cuisine, savory and sweet dishes alike. From artisanal pizzas and fresh sushi to handcrafted cocktails, there's something for every palate. Located in the heart of Reykjavík, Pósthús Mathöll is more than just a food hall—its elegant architecture and inviting atmosphere encourage you to explore its diverse culinary offerings.",
+    "imageURL": "https://imgur.com/9cLvtnJ.jpg",
+    "openTime": "11:30",
+    "closeTime": "23:00",
+    "happyPeriods": [
+      {
+        "start": "16:00",
+        "end": "18:00",
+        "beerPrice": 1200,
+        "winePrice": null,
+        "cocktailPrice": null
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "building.2.crop.circle",
+        "title": "Food Hall"
+      },
+      {
+        "iconName": "person.3.sequence",
+        "title": "Multiple Eateries"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.14781242723015,
+      "longitude": -21.938249217657244
+    },
+    "id": "posthus-matholl",
+    "slug": "posthus-matholl",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "Litli Barinn",
+    "introduction": "We are located in a charming historic hotel called Local 101, though you may not be able to tell that there are rooms upstairs :) When neighborhood bar meets boutique hotel!",
+    "imageURL": "https://imgur.com/TVbehoC.jpg",
+    "openTime": "15:00",
+    "closeTime": "22:30",
+    "happyPeriods": [
+      {
+        "start": "15:00",
+        "end": "18:00",
+        "beerPrice": 990,
+        "winePrice": 1200,
+        "cocktailPrice": null
+      },
+      {
+        "start": "18:00",
+        "end": "19:00",
+        "beerPrice": null,
+        "winePrice": null,
+        "cocktailPrice": 1500
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "building.columns",
+        "title": "Historic Hotel"
+      },
+      {
+        "iconName": "sparkles",
+        "title": "Boutique Vibes"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.1493912,
+      "longitude": -21.9445801
+    },
+    "id": "litli-barinn",
+    "slug": "litli-barinn",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "Bon",
+    "introduction": "Located on Reykjavík’s main shopping street within Hotel VON, Bon Restaurant blends casual yet smart vibes with French-inspired cuisine, a concise wine list, and handcrafted cocktails.",
+    "imageURL": "https://imgur.com/aUt1BhZ.jpg",
+    "openTime": "07:00",
+    "closeTime": "23:00",
+    "happyPeriods": [
+      {
+        "start": "16:00",
+        "end": "19:00",
+        "beerPrice": 1400,
+        "winePrice": 1500,
+        "cocktailPrice": 1900
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "cart.fill",
+        "title": "2-for-1 Nova snacks (Tue–Thu)"
+      },
+      {
+        "iconName": "trophy",
+        "title": "Award-winning bar manager"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.144604,
+      "longitude": -21.923163
+    },
+    "id": "bon",
+    "slug": "bon",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "Stúdentakjallarinn",
+    "introduction": "Stúdentakjallarinn is a restaurant and entertainment venue, café, and bar in the basement of Háskólatorg on Sæmundargata, offering a varied selection of food and drink at fair prices, a lively program, and a cozy atmosphere open to everyone year-round. It is a popular spot for student gatherings.",
+    "imageURL": "https://imgur.com/YBTN9YS.jpg",
+    "openTime": "11:00",
+    "closeTime": "01:00",
+    "happyPeriods": [
+      {
+        "start": "16:00",
+        "end": "19:00",
+        "beerPrice": 950,
+        "winePrice": 1190,
+        "cocktailPrice": null
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "studentdesk",
+        "title": "Student Discounts"
+      },
+      {
+        "iconName": "music.note",
+        "title": "Live Events"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.13991643683687,
+      "longitude": -21.950030975390888
+    },
+    "id": "studentakjallarinn",
+    "slug": "studentakjallarinn",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "SKÝ Bar",
+    "introduction": "Perched atop the city skyline, SKÝ Bar offers breathtaking views and an upscale ambiance.",
+    "imageURL": "https://imgur.com/DB6E61y.jpg",
+    "openTime": "17:00",
+    "closeTime": "02:00",
+    "happyPeriods": [
+      {
+        "start": "18:00",
+        "end": "20:00",
+        "beerPrice": null,
+        "winePrice": null,
+        "cocktailPrice": null
+      },
+      {
+        "start": "20:00",
+        "end": "23:00",
+        "beerPrice": null,
+        "winePrice": null,
+        "cocktailPrice": null
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "music.note",
+        "title": "Live Music"
+      },
+      {
+        "iconName": "sun.max",
+        "title": "Rooftop"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.1491825392235,
+      "longitude": -21.93084671580469
+    },
+    "id": "sky-bar",
+    "slug": "sky-bar",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "Geiri Smart",
+    "introduction": "Downtown Reykjavík’s chic spot blending eccentric sophistication with ever-evolving, farm-driven cuisine and handcrafted drinks.",
+    "imageURL": "https://imgur.com/Gp6NKxN.jpg",
+    "openTime": "12:00",
+    "closeTime": "23:00",
+    "happyPeriods": [
+      {
+        "start": "15:00",
+        "end": "18:00",
+        "beerPrice": null,
+        "winePrice": null,
+        "cocktailPrice": null
+      },
+      {
+        "start": "21:00",
+        "end": "23:00",
+        "beerPrice": null,
+        "winePrice": null,
+        "cocktailPrice": null
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "sparkles",
+        "title": "Sophisticated Ambience"
+      },
+      {
+        "iconName": "leaf",
+        "title": "Farm-to-Table"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.14659858355287,
+      "longitude": -21.92990110231315
+    },
+    "id": "geiri-smart",
+    "slug": "geiri-smart",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "Bastard Brew & Food",
+    "introduction": "House-brewed beers paired with hearty pub fare in a relaxed atmosphere.",
+    "imageURL": "https://imgur.com/HSHqKYM.jpg",
+    "openTime": "15:00",
+    "closeTime": "23:00",
+    "happyPeriods": [
+      {
+        "start": "15:00",
+        "end": "18:00",
+        "beerPrice": null,
+        "winePrice": null,
+        "cocktailPrice": null
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "house.fill",
+        "title": "Brewery Tours"
+      },
+      {
+        "iconName": "fork.knife",
+        "title": "Pub Food"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.14577785731653,
+      "longitude": -21.930689786968927
+    },
+    "id": "bastard-brew-food",
+    "slug": "bastard-brew-food",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "The English Pub",
+    "introduction": "Old-world charm serving imported ales and traditional British snacks.",
+    "imageURL": "https://imgur.com/jRsz4X1.jpg",
+    "openTime": "16:00",
+    "closeTime": "00:00",
+    "happyPeriods": [
+      {
+        "start": "16:00",
+        "end": "19:00",
+        "beerPrice": null,
+        "winePrice": null,
+        "cocktailPrice": null
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "flag.uk",
+        "title": "Authentic"
+      },
+      {
+        "iconName": "pint.fill",
+        "title": "Fine Ales"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.14770400834588,
+      "longitude": -21.939459973455214
+    },
+    "id": "the-english-pub",
+    "slug": "the-english-pub",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "Lebowski Bar",
+    "introduction": "Themed after The Big Lebowski with White Russian specials and retro decor.",
+    "imageURL": "https://imgur.com/TZkFcOW.jpg",
+    "openTime": "16:00",
+    "closeTime": "01:00",
+    "happyPeriods": [
+      {
+        "start": "16:00",
+        "end": "19:00",
+        "beerPrice": null,
+        "winePrice": null,
+        "cocktailPrice": null
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "film.fill",
+        "title": "Themed Nights"
+      },
+      {
+        "iconName": "cup.and.saucer.fill",
+        "title": "Specialty Cocktails"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.14573006403712,
+      "longitude": -21.929612215805037
+    },
+    "id": "lebowski-bar",
+    "slug": "lebowski-bar",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "Kaldi Bar",
+    "introduction": "Well-known for its vibrant atmosphere and live DJ sets.",
+    "imageURL": "https://imgur.com/inf1qzJ.jpg",
+    "openTime": "17:00",
+    "closeTime": "03:00",
+    "happyPeriods": [
+      {
+        "start": "16:00",
+        "end": "19:00",
+        "beerPrice": null,
+        "winePrice": null,
+        "cocktailPrice": null
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "music.note.list",
+        "title": "Live DJs"
+      },
+      {
+        "iconName": "sparkles",
+        "title": "Cocktail Lab"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.14570912143718,
+      "longitude": -21.929502659985314
+    },
+    "id": "kaldi-bar",
+    "slug": "kaldi-bar",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "Slippbarinn",
+    "introduction": "Trendy waterfront bar with craft cocktails and skyline views.",
+    "imageURL": "https://imgur.com/NgO1OIh.jpg",
+    "openTime": "17:00",
+    "closeTime": "02:00",
+    "happyPeriods": [
+      {
+        "start": "15:00",
+        "end": "18:00",
+        "beerPrice": 1000,
+        "winePrice": 1200,
+        "cocktailPrice": 1900
+      },
+      {
+        "start": "21:30",
+        "end": "23:00",
+        "beerPrice": 1000,
+        "winePrice": 1200,
+        "cocktailPrice": 1900
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "droplet.fill",
+        "title": "Waterfront"
+      },
+      {
+        "iconName": "leaf.arrow.circlepath",
+        "title": "Seasonal Menu"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.15101984406957,
+      "longitude": -21.945803973476764
+    },
+    "id": "slippbarinn",
+    "slug": "slippbarinn",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "Sæta Svínið",
+    "introduction": "Cozy bar known for its record collection and creative cocktails.",
+    "imageURL": "https://imgur.com/xGnDvnj.jpg",
+    "openTime": "15:00",
+    "closeTime": "01:00",
+    "happyPeriods": [
+      {
+        "start": "15:00",
+        "end": "18:00",
+        "beerPrice": 1190,
+        "winePrice": 1390,
+        "cocktailPrice": 1990
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "music.mic",
+        "title": "Vinyl Nights"
+      },
+      {
+        "iconName": "leaf.fill",
+        "title": "Local Brews"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.14860035400069,
+      "longitude": -21.94125175998512
+    },
+    "id": "saeta-svinid",
+    "slug": "saeta-svinid",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "American Bar",
+    "introduction": "Classic American-style bar with burgers, sports on large screens, and hearty drinks. Special offers for 2 for 1 Moscow Mule & Aperols 2900kr",
+    "imageURL": "https://imgur.com/xzpuD5C.jpg",
+    "openTime": "16:00",
+    "closeTime": "01:00",
+    "happyPeriods": [
+      {
+        "start": "16:00",
+        "end": "19:00",
+        "beerPrice": 1100,
+        "winePrice": 1300,
+        "cocktailPrice": 1950
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "sportscourt.fill",
+        "title": "Sports Bar"
+      },
+      {
+        "iconName": "burger.fill",
+        "title": "Gourmet Burgers"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.14778834146814,
+      "longitude": -21.940075618209857
+    },
+    "id": "american-bar",
+    "slug": "american-bar",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "The Dubliner",
+    "introduction": "Welcome to The Dubliner, where the spirit of Ireland comes alive in the heart of Reykjavík. Since 1995, this cozy Irish pub offers heartfelt hospitality with traditional music, hearty pub fare, and the finest selection of Irish whiskeys and beers.",
+    "imageURL": "https://imgur.com/SCRIhYS.jpg",
+    "openTime": "12:00",
+    "closeTime": "04:30",
+    "happyPeriods": [
+      {
+        "start": "12:00",
+        "end": "21:00",
+        "beerPrice": 1000,
+        "winePrice": null,
+        "cocktailPrice": null
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "music.note",
+        "title": "Traditional Music"
+      },
+      {
+        "iconName": "sportscourt",
+        "title": "Live Sports"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.14855,
+      "longitude": -21.94027
+    },
+    "id": "the-dubliner",
+    "slug": "the-dubliner",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "Holt Hotel Bar",
+    "introduction": "Sophisticated hotel bar with classic cocktails, refined ambiance, and a rich art collection.",
+    "imageURL": "https://i.imgur.com/yK6xNWg.jpg",
+    "openTime": "16:00",
+    "closeTime": "22:00",
+    "happyPeriods": [
+      {
+        "start": "16:00",
+        "end": "18:00",
+        "beerPrice": 1000,
+        "winePrice": 1350,
+        "cocktailPrice": 1950
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "paintbrush.fill",
+        "title": "Art Decor"
+      },
+      {
+        "iconName": "sparkles",
+        "title": "Elegant Vibe"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.14288587710791,
+      "longitude": -21.935244675329763
+    },
+    "id": "holt-hotel-bar",
+    "slug": "holt-hotel-bar",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "Perlan Bar",
+    "introduction": "A panoramic view with drinks at the top of Reykjavík.",
+    "imageURL": "https://i.imgur.com/5q5Mwmc.jpg",
+    "openTime": "11:30",
+    "closeTime": "21:00",
+    "happyPeriods": [
+      {
+        "start": "17:00",
+        "end": "20:00",
+        "beerPrice": 1150,
+        "winePrice": 1350,
+        "cocktailPrice": 2150
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "binoculars",
+        "title": "View Deck"
+      },
+      {
+        "iconName": "leaf",
+        "title": "Nature Vibes"
+      },
+      {
+        "iconName": "wifi",
+        "title": "WiFi"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.12933333190499,
+      "longitude": -21.918701086970156
+    },
+    "id": "perlan-bar",
+    "slug": "perlan-bar",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "Money's",
+    "introduction": "Sleek and stylish, Money's Bar in downtown Reykjavík blends high-energy vibes with premium cocktails and modern decor. A hotspot for nightlife, live DJs, and unforgettable evenings.",
+    "imageURL": "https://imgur.com/R8jFLW9.jpg",
+    "openTime": "12:00",
+    "closeTime": "22:00",
+    "happyPeriods": [
+      {
+        "start": "14:00",
+        "end": "18:00",
+        "beerPrice": 1100,
+        "winePrice": 1100,
+        "cocktailPrice": 1700
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "dollarsign.circle",
+        "title": "Upscale Vibes"
+      },
+      {
+        "iconName": "music.note.list",
+        "title": "Live DJs"
+      },
+      {
+        "iconName": "sparkles",
+        "title": "Cocktail Lounge"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.14601071399903,
+      "longitude": -21.929323400460696
+    },
+    "id": "money-s",
+    "slug": "money-s",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "ROOF",
+    "introduction": "Perched atop the Reykjavík Edition Hotel, ROOF boasts panoramic views, designer cocktails, and an upscale atmosphere. A premium spot for golden hour drinks and late-night mingling.",
+    "imageURL": "https://imgur.com/vgbGdQg.jpg",
+    "openTime": "16:00",
+    "closeTime": "23:00",
+    "happyPeriods": [
+      {
+        "start": "18:00",
+        "end": "20:00",
+        "beerPrice": 1500,
+        "winePrice": 1500,
+        "cocktailPrice": 2100
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "sun.max.fill",
+        "title": "Rooftop Views"
+      },
+      {
+        "iconName": "sparkles",
+        "title": "Luxury Atmosphere"
+      },
+      {
+        "iconName": "music.note",
+        "title": "Lounge Music"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.15012033606344,
+      "longitude": -21.93493918696862
+    },
+    "id": "roof",
+    "slug": "roof",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "Röntgen",
+    "introduction": "A trendy and artsy bar set in a former X-ray clinic, Röntgen offers a unique blend of music, cocktails, and culture. It's a creative hub for Reykjavík's alternative scene.",
+    "imageURL": "https://imgur.com/yHEmhhT.jpg",
+    "openTime": "16:00",
+    "closeTime": "01:00",
+    "happyPeriods": [
+      {
+        "start": "16:00",
+        "end": "20:00",
+        "beerPrice": 1000,
+        "winePrice": 1200,
+        "cocktailPrice": null
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "waveform",
+        "title": "DJ Sets"
+      },
+      {
+        "iconName": "paintbrush",
+        "title": "Creative Venue"
+      },
+      {
+        "iconName": "music.note",
+        "title": "Events & Live Shows"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.14729785973961,
+      "longitude": -21.932688751372144
+    },
+    "id": "rontgen",
+    "slug": "rontgen",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "Bodega",
+    "introduction": "A modern wine bar with a casual atmosphere, Bodega in downtown Reykjavík offers a curated selection of wines, cocktails, and tasty small plates. With chic decor, an upbeat vibe, and a perfect setting for date nights or friendly meetups, it’s where wine culture meets Reykjavík cool.",
+    "imageURL": "https://imgur.com/h003CBj.jpg",
+    "openTime": "16:00",
+    "closeTime": "01:00",
+    "happyPeriods": [
+      {
+        "start": "16:00",
+        "end": "18:00",
+        "beerPrice": 1000,
+        "winePrice": 1200,
+        "cocktailPrice": null
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "wineglass.fill",
+        "title": "Curated Wine List"
+      },
+      {
+        "iconName": "sparkles",
+        "title": "Small Plates"
+      },
+      {
+        "iconName": "heart.circle",
+        "title": "Chic & Cozy Vibe"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.14435266091803,
+      "longitude": -21.93149300046086
+    },
+    "id": "bodega",
+    "slug": "bodega",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "Einstök Bar",
+    "introduction": "Located in the heart of Reykjavík, Einstök Bar is the official home of Iceland’s most famous craft beer. With a full range of Einstök brews on tap, including limited editions, this cozy and stylish spot is a must for beer lovers looking to explore local flavors in a relaxed atmosphere.",
+    "imageURL": "https://imgur.com/cIMj3rG.jpg",
+    "openTime": "15:00",
+    "closeTime": "01:00",
+    "happyPeriods": [
+      {
+        "start": "16:00",
+        "end": "19:00",
+        "beerPrice": null,
+        "winePrice": null,
+        "cocktailPrice": null
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "flame.fill",
+        "title": "Einstök Specials"
+      },
+      {
+        "iconName": "leaf.fill",
+        "title": "Craft Beer Focus"
+      },
+      {
+        "iconName": "sparkles",
+        "title": "Limited Editions"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.14614593499866,
+      "longitude": -21.93159830231318
+    },
+    "id": "einstok-bar",
+    "slug": "einstok-bar",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "ÆGIR 101",
+    "introduction": "Bar and taproom at Laugavegur 2, opened in October 2022. From the beginning its aim has been to offer a wide selection of quality beers manufactured at their brewery in Grandi. ÆGIR 101 is open every day and offers Icelandic products from sodas to strong liquor. Celebrating traditional folk music and older Nordic styles, it hosts Vikivaki dance evenings and co-singing events with the folk ballad community. It also serves traditional meat soup and fermented shark. Et, drekk og ver glaðr!",
+    "imageURL": "https://imgur.com/jHPgD1Q.jpg",
+    "openTime": "12:00",
+    "closeTime": "01:00",
+    "happyPeriods": [
+      {
+        "start": "12:00",
+        "end": "18:00",
+        "beerPrice": 1200,
+        "winePrice": 1200,
+        "cocktailPrice": null
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "beer.mug.fill",
+        "title": "Craft Beer Selection"
+      },
+      {
+        "iconName": "music.note",
+        "title": "Vikivaki Dance Evenings"
+      },
+      {
+        "iconName": "person.3.sequence",
+        "title": "Co-singing Events"
+      },
+      {
+        "iconName": "leaf.fill",
+        "title": "Traditional Icelandic Delicacies"
+      },
+      {
+        "iconName": "gamecontroller.fill",
+        "title": "Games Available"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.14639509721671,
+      "longitude": -21.93276963179635
+    },
+    "id": "aegir-101",
+    "slug": "aegir-101",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "Public House Gastropub",
+    "introduction": "Gastropub with Asian influences. We use Icelandic ingredients in the cooking but we add a little \"Japanese twist\" because we like to play with our food and drinks.",
+    "imageURL": "https://i.imgur.com/YWmBhzX.jpg",
+    "openTime": "12:00",
+    "closeTime": "00:00",
+    "happyPeriods": [
+      {
+        "start": "16:00",
+        "end": "18:00",
+        "beerPrice": 1000,
+        "winePrice": null,
+        "cocktailPrice": null
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "fork.knife",
+        "title": "Asian-Inspired Small Plates"
+      },
+      {
+        "iconName": "cup.and.saucer.fill",
+        "title": "Bottomless Brunch"
+      },
+      {
+        "iconName": "star.fill",
+        "title": "Prize-Winning Cocktails"
+      },
+      {
+        "iconName": "clock.fill",
+        "title": "Happy Hour Daily"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.14552467924011,
+      "longitude": -21.92826058511659
+    },
+    "id": "public-house-gastropub",
+    "slug": "public-house-gastropub",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "Dillon",
+    "introduction": "Dillon is a Whiskey Bar known for its warm and welcoming atmosphere, friendly staff, and great customers. With over 180 types of whiskey at any time, classic rock music, live music, karaoke, and the legendary DJ Andrea Jónsdóttir on weekends— all housed in one of Reykjavík’s oldest wooden buildings— it offers a unique experience for whiskey lovers and bar-goers alike.",
+    "imageURL": "https://i.imgur.com/x7HrF8K.jpg",
+    "openTime": "12:00",
+    "closeTime": "01:00",
+    "happyPeriods": [
+      {
+        "start": "12:00",
+        "end": "19:00",
+        "beerPrice": null,
+        "winePrice": null,
+        "cocktailPrice": null
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "glass.fill",
+        "title": "Over 180 Whiskeys"
+      },
+      {
+        "iconName": "music.note",
+        "title": "Live Music"
+      },
+      {
+        "iconName": "mic.fill",
+        "title": "Karaoke Nights"
+      },
+      {
+        "iconName": "headphones",
+        "title": "DJ Andrea on Weekends"
+      },
+      {
+        "iconName": "book.fill",
+        "title": "Whiskey School"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.14534919464181,
+      "longitude": -21.927396613952595
+    },
+    "id": "dillon",
+    "slug": "dillon",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "Daisy",
+    "introduction": "A dark, moody cocktail lounge in central Reykjavík, known for its craft cocktails and relaxed atmosphere.",
+    "imageURL": "https://imgur.com/4j4uKGV.jpg",
+    "openTime": "16:00",
+    "closeTime": "01:00",
+    "happyPeriods": [
+      {
+        "start": "16:00",
+        "end": "18:00",
+        "beerPrice": 1000,
+        "winePrice": 1200,
+        "cocktailPrice": 2000
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "cocktail",
+        "title": "Craft Cocktails"
+      },
+      {
+        "iconName": "music.note",
+        "title": "Laid‑back Vibes"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.14620842042777,
+      "longitude": -21.934151827444374
+    },
+    "id": "daisy",
+    "slug": "daisy",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "Kaffibarinn",
+    "introduction": "A legendary Reykjavík institution, Kaffibarinn is known for its intimate vibe, eclectic crowd, and late-night dancing. Popular with locals and visitors alike, it's a spot where you can sip cocktails, enjoy DJs, and stay out till the early hours.",
+    "imageURL": "https://imgur.com/ZTMQlqv.jpg",
+    "openTime": "16:00",
+    "closeTime": "01:00",
+    "happyPeriods": [
+      {
+        "start": "15:00",
+        "end": "20:00",
+        "beerPrice": 1050,
+        "winePrice": 1250,
+        "cocktailPrice": 2300
+      },
+      {
+        "start": "20:00",
+        "end": "23:00",
+        "beerPrice": null,
+        "winePrice": null,
+        "cocktailPrice": 2300
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "music.note.list",
+        "title": "DJ Sets"
+      },
+      {
+        "iconName": "moon.fill",
+        "title": "Late Nights"
+      },
+      {
+        "iconName": "sparkles",
+        "title": "Local Favorite"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.14608085694034,
+      "longitude": -21.931076406127833
+    },
+    "id": "kaffibarinn",
+    "slug": "kaffibarinn",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  },
+  {
+    "name": "12 Tónar",
+    "introduction": "Part record shop, part café and bar, 12 Tónar is a cultural gem in Reykjavík. Enjoy browsing vinyl and sipping drinks while soaking in a cozy artistic atmosphere.",
+    "imageURL": "https://imgur.com/I4tamLB.jpg",
+    "openTime": "10:00",
+    "closeTime": "23:00",
+    "happyPeriods": [
+      {
+        "start": "14:00",
+        "end": "19:00",
+        "beerPrice": 1100,
+        "winePrice": 1300,
+        "cocktailPrice": null
+      }
+    ],
+    "perks": [
+      {
+        "iconName": "music.note",
+        "title": "Record Store"
+      },
+      {
+        "iconName": "cup.and.saucer.fill",
+        "title": "Coffee & Drinks"
+      },
+      {
+        "iconName": "sparkles",
+        "title": "Artistic Vibes"
+      }
+    ],
+    "coordinates": {
+      "latitude": 64.14495363229054,
+      "longitude": -21.93081371765751
+    },
+    "id": "12-tonar",
+    "slug": "12-tonar",
+    "website": "",
+    "instagram": "",
+    "address": "",
+    "isSponsored": false
+  }
+]
