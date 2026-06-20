@@ -139,6 +139,30 @@ function customizeBeerLugaMap(map) {
   });
 }
 
+function isPeriodActiveAtTime(period, selectedTime) {
+  if (!selectedTime) return true;
+
+  const selected = timeToMinutes(selectedTime);
+  const start = timeToMinutes(period.start);
+  const end = timeToMinutes(period.end);
+
+  if (end >= start) return selected >= start && selected < end;
+  return selected >= start || selected < end;
+}
+
+function barMatchesFilters(bar, maxBeerPrice, selectedTime) {
+  const periods = bar.happyPeriods || [];
+
+  return periods.some((period) => {
+    const matchesTime = isPeriodActiveAtTime(period, selectedTime);
+
+    const matchesPrice =
+      !maxBeerPrice ||
+      (period.beerPrice && period.beerPrice <= Number(maxBeerPrice));
+
+    return matchesTime && matchesPrice;
+  });
+}
 function App() {
   const mapContainerRef = useRef(null);
   const mapRef = useRef(null);
@@ -148,6 +172,8 @@ function App() {
   const [selectedBar, setSelectedBar] = useState(null);
   const [onlyHappyNow, setOnlyHappyNow] = useState(false);
   const [mapReady, setMapReady] = useState(false);
+  const [maxBeerPrice, setMaxBeerPrice] = useState('');
+  const [selectedTime, setSelectedTime] = useState('');
 
   useEffect(() => {
     fetch(DATA_URL)
@@ -220,8 +246,20 @@ function App() {
   }, []);
 
   const visibleBars = useMemo(() => {
-    return onlyHappyNow ? bars.filter(getActiveHappyPeriod) : bars;
-  }, [bars, onlyHappyNow]);
+  let result = bars;
+
+  if (onlyHappyNow) {
+    result = result.filter(getActiveHappyPeriod);
+  }
+
+  if (maxBeerPrice || selectedTime) {
+    result = result.filter((bar) =>
+      barMatchesFilters(bar, maxBeerPrice, selectedTime)
+    );
+  }
+
+  return result;
+}, [bars, onlyHappyNow, maxBeerPrice, selectedTime]);
 
   useEffect(() => {
     if (!mapReady || !mapRef.current) return;
@@ -273,6 +311,30 @@ function App() {
           <span>🔵 Soon</span>
           <span>⚪ Later</span>
         </div>
+
+        <div className="filters">
+  <label>
+    Max beer price
+    <select
+      value={maxBeerPrice}
+      onChange={(event) => setMaxBeerPrice(event.target.value)}
+    >
+      <option value="">Any</option>
+      <option value="1000">Under 1000 kr</option>
+      <option value="1200">Under 1200 kr</option>
+      <option value="1500">Under 1500 kr</option>
+    </select>
+  </label>
+
+  <label>
+    Happy at
+    <input
+      type="time"
+      value={selectedTime}
+      onChange={(event) => setSelectedTime(event.target.value)}
+    />
+  </label>
+</div>
       </section>
 
       {selectedBar && (

@@ -254,3 +254,29 @@ button, .directions {
     width: 430px;
   }
 }
+.filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 800;
+  color: white;
+}
+
+.filters select,
+.filters input {
+  width: 100%;
+  border: 0;
+  border-radius: 999px;
+  padding: 9px 10px;
+  font-weight: 800;
+  color: var(--beer-text);
+  background: white;
+}
