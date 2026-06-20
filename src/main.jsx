@@ -10,7 +10,7 @@ const MAP_STYLE = 'https://tiles.openfreemap.org/styles/bright';
 
 const DATA_URL =
   'https://gist.githubusercontent.com/IvanIlanic/33107020899eb9e32a2507124a96a70c/raw/dba.json';
-  
+
 function timeToMinutes(value) {
   const [h, m] = value.split(':').map(Number);
   return h * 60 + m;
@@ -26,14 +26,72 @@ function minutesToTime(minutes) {
 function rangesOverlap(startA, endA, startB, endB) {
   return startA < endB && startB < endA;
 }
+const DAY_NAMES = [
+  'Sunday',
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday'
+];
+
+function normalizeDays(value = 'daily') {
+  return value
+    .toLowerCase()
+    .replaceAll('–', '-')
+    .replaceAll('—', '-')
+    .trim();
+}
+
+function periodMatchesDay(period, date = new Date()) {
+  const days = normalizeDays(period.days);
+  const day = date.getDay();
+
+  if (!period.days || days === 'daily' || days === 'every day') return true;
+  if (days === 'weekdays') return day >= 1 && day <= 5;
+  if (days === 'weekends') return day === 0 || day === 6;
+  if (days === 'sunday-thursday') {
+    return day === 0 || (day >= 1 && day <= 4);
+  }
+  if (days === 'friday-saturday') {
+    return day === 5 || day === 6;
+  }
+  if (days === 'thursday-saturday') {
+    return day >= 4 && day <= 6;
+  }
+
+  return days
+    .split(',')
+    .map((item) => item.trim())
+    .some((item) => DAY_NAMES[day].toLowerCase() === item);
+}
 
 function isNowInPeriod(period, now = new Date()) {
   const current = now.getHours() * 60 + now.getMinutes();
   const start = timeToMinutes(period.start);
   const end = timeToMinutes(period.end);
 
-  if (end >= start) return current >= start && current < end;
-  return current >= start || current < end;
+  if (end >= start) {
+    return (
+      periodMatchesDay(period, now) &&
+      current >= start &&
+      current < end
+    );
+  }
+
+  if (current >= start) {
+    return periodMatchesDay(period, now);
+  }
+
+  if (current < end) {
+    const previousDay = new Date(now);
+    previousDay.setDate(now.getDate() - 1);
+
+    return periodMatchesDay(period, previousDay);
+  }
+
+  return false;
 }
 
 function getActiveHappyPeriod(bar) {
@@ -44,6 +102,8 @@ function getSoonHappyPeriod(bar, now = new Date()) {
   const current = now.getHours() * 60 + now.getMinutes();
 
   return bar.happyPeriods?.find((period) => {
+    if (!periodMatchesDay(period, now)) return false;
+
     const start = timeToMinutes(period.start);
     const difference = start - current;
 
@@ -95,6 +155,7 @@ function happyHourDetails(bar) {
   if (!bar.happyPeriods?.length) return [];
 
   return bar.happyPeriods.map((period) => ({
+    days: period.days || 'Daily',
     time: `${period.start}–${period.end}`,
     beer: period.beerPrice,
     wine: period.winePrice,
@@ -438,7 +499,9 @@ function App() {
 
             {happyHourDetails(selectedBar).map((period, index) => (
               <div key={index} className="happy-period">
-                <div className="happy-time-row">{period.time}</div>
+                <div className="happy-time-row">
+  <strong>{period.days}</strong>: {period.time}
+</div>
 
                 <div className="happy-prices">
                   {period.beer && <span>🍺 {period.beer} kr</span>}
