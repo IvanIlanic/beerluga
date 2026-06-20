@@ -9,8 +9,8 @@ const REYKJAVIK = [64.1466, -21.9426];
 const MAP_STYLE = 'https://tiles.openfreemap.org/styles/bright';
 
 const DATA_URL =
-  'https://gist.githubusercontent.com/IvanIlanic/33107020899eb9e32a2507124a96a70c/raw/4949658a2ef652ab06917bb16960c38d1dc155d5/dba.json';
-
+  'https://gist.githubusercontent.com/IvanIlanic/33107020899eb9e32a2507124a96a70c/raw/dba.json';
+  
 function timeToMinutes(value) {
   const [h, m] = value.split(':').map(Number);
   return h * 60 + m;
