@@ -16,6 +16,17 @@ function timeToMinutes(value) {
   return h * 60 + m;
 }
 
+function minutesToTime(minutes) {
+  const h = Math.floor(minutes / 60);
+  const m = minutes % 60;
+
+  return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
+}
+
+function rangesOverlap(startA, endA, startB, endB) {
+  return startA < endB && startB < endA;
+}
+
 function isNowInPeriod(period, now = new Date()) {
   const current = now.getHours() * 60 + now.getMinutes();
   const start = timeToMinutes(period.start);
@@ -38,6 +49,46 @@ function getSoonHappyPeriod(bar, now = new Date()) {
 
     return difference > 0 && difference <= 120;
   });
+}
+
+function periodMatchesTimeRange(period, timeRange) {
+  const start = timeToMinutes(period.start);
+  const end = timeToMinutes(period.end);
+
+  if (end >= start) {
+    return rangesOverlap(start, end, timeRange[0], timeRange[1]);
+  }
+
+  return (
+    rangesOverlap(start, 1439, timeRange[0], timeRange[1]) ||
+    rangesOverlap(0, end, timeRange[0], timeRange[1])
+  );
+}
+
+function periodMatchesPriceRange(period, priceRange) {
+  const isDefaultPriceRange = priceRange[0] === 0 && priceRange[1] === 2500;
+
+  const prices = [
+    period.beerPrice,
+    period.winePrice,
+    period.cocktailPrice
+  ].filter(Boolean);
+
+  if (!prices.length) return isDefaultPriceRange;
+
+  return prices.some(
+    (price) => price >= priceRange[0] && price <= priceRange[1]
+  );
+}
+
+function barMatchesFilters(bar, priceRange, timeRange) {
+  const periods = bar.happyPeriods || [];
+
+  return periods.some(
+    (period) =>
+      periodMatchesTimeRange(period, timeRange) &&
+      periodMatchesPriceRange(period, priceRange)
+  );
 }
 
 function happyHourDetails(bar) {
@@ -139,30 +190,6 @@ function customizeBeerLugaMap(map) {
   });
 }
 
-function isPeriodActiveAtTime(period, selectedTime) {
-  if (!selectedTime) return true;
-
-  const selected = timeToMinutes(selectedTime);
-  const start = timeToMinutes(period.start);
-  const end = timeToMinutes(period.end);
-
-  if (end >= start) return selected >= start && selected < end;
-  return selected >= start || selected < end;
-}
-
-function barMatchesFilters(bar, maxBeerPrice, selectedTime) {
-  const periods = bar.happyPeriods || [];
-
-  return periods.some((period) => {
-    const matchesTime = isPeriodActiveAtTime(period, selectedTime);
-
-    const matchesPrice =
-      !maxBeerPrice ||
-      (period.beerPrice && period.beerPrice <= Number(maxBeerPrice));
-
-    return matchesTime && matchesPrice;
-  });
-}
 function App() {
   const mapContainerRef = useRef(null);
   const mapRef = useRef(null);
@@ -172,8 +199,9 @@ function App() {
   const [selectedBar, setSelectedBar] = useState(null);
   const [onlyHappyNow, setOnlyHappyNow] = useState(false);
   const [mapReady, setMapReady] = useState(false);
-  const [maxBeerPrice, setMaxBeerPrice] = useState('');
-  const [selectedTime, setSelectedTime] = useState('');
+
+  const [priceRange, setPriceRange] = useState([0, 2500]);
+  const [timeRange, setTimeRange] = useState([12 * 60, 23 * 60]);
 
   useEffect(() => {
     fetch(DATA_URL)
@@ -246,20 +274,18 @@ function App() {
   }, []);
 
   const visibleBars = useMemo(() => {
-  let result = bars;
+    let result = bars;
 
-  if (onlyHappyNow) {
-    result = result.filter(getActiveHappyPeriod);
-  }
+    if (onlyHappyNow) {
+      result = result.filter(getActiveHappyPeriod);
+    }
 
-  if (maxBeerPrice || selectedTime) {
     result = result.filter((bar) =>
-      barMatchesFilters(bar, maxBeerPrice, selectedTime)
+      barMatchesFilters(bar, priceRange, timeRange)
     );
-  }
 
-  return result;
-}, [bars, onlyHappyNow, maxBeerPrice, selectedTime]);
+    return result;
+  }, [bars, onlyHappyNow, priceRange, timeRange]);
 
   useEffect(() => {
     if (!mapReady || !mapRef.current) return;
@@ -313,28 +339,84 @@ function App() {
         </div>
 
         <div className="filters">
-  <label>
-    Max beer price
-    <select
-      value={maxBeerPrice}
-      onChange={(event) => setMaxBeerPrice(event.target.value)}
-    >
-      <option value="">Any</option>
-      <option value="1000">Under 1000 kr</option>
-      <option value="1200">Under 1200 kr</option>
-      <option value="1500">Under 1500 kr</option>
-    </select>
-  </label>
+          <div className="range-filter">
+            <div className="filter-header">
+              <span>Price</span>
+              <strong>
+                {priceRange[0]}–{priceRange[1]} kr
+              </strong>
+            </div>
 
-  <label>
-    Happy at
-    <input
-      type="time"
-      value={selectedTime}
-      onChange={(event) => setSelectedTime(event.target.value)}
-    />
-  </label>
-</div>
+            <div className="dual-range">
+              <input
+                type="range"
+                min="0"
+                max="2500"
+                step="50"
+                value={priceRange[0]}
+                onChange={(e) =>
+                  setPriceRange([
+                    Math.min(Number(e.target.value), priceRange[1] - 50),
+                    priceRange[1]
+                  ])
+                }
+              />
+
+              <input
+                type="range"
+                min="0"
+                max="2500"
+                step="50"
+                value={priceRange[1]}
+                onChange={(e) =>
+                  setPriceRange([
+                    priceRange[0],
+                    Math.max(Number(e.target.value), priceRange[0] + 50)
+                  ])
+                }
+              />
+            </div>
+          </div>
+
+          <div className="range-filter">
+            <div className="filter-header">
+              <span>Happy hour time</span>
+              <strong>
+                {minutesToTime(timeRange[0])}–{minutesToTime(timeRange[1])}
+              </strong>
+            </div>
+
+            <div className="dual-range">
+              <input
+                type="range"
+                min="0"
+                max="1439"
+                step="15"
+                value={timeRange[0]}
+                onChange={(e) =>
+                  setTimeRange([
+                    Math.min(Number(e.target.value), timeRange[1] - 15),
+                    timeRange[1]
+                  ])
+                }
+              />
+
+              <input
+                type="range"
+                min="0"
+                max="1439"
+                step="15"
+                value={timeRange[1]}
+                onChange={(e) =>
+                  setTimeRange([
+                    timeRange[0],
+                    Math.max(Number(e.target.value), timeRange[0] + 15)
+                  ])
+                }
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       {selectedBar && (
